@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hopstop/static/css/main.e59b51cb.css",
-    "main.js": "/Hopstop/static/js/main.772d3e31.js",
+    "main.js": "/Hopstop/static/js/main.18def100.js",
     "static/media/uicons-regular-rounded-BG3GDTFR.eot": "/Hopstop/static/media/uicons-regular-rounded-BG3GDTFR.2a361185de096a6e3e99.eot",
     "static/media/uicons-bold-rounded-ZDARGU7R.eot": "/Hopstop/static/media/uicons-bold-rounded-ZDARGU7R.ac2c608bf183bb6b3390.eot",
     "static/media/uicons-solid-rounded-YIIQLYY7.eot": "/Hopstop/static/media/uicons-solid-rounded-YIIQLYY7.46f60d555e51ea1b1a10.eot",
@@ -80,10 +80,10 @@
     "index.html": "/Hopstop/index.html",
     "static/media/icon-cart.svg": "/Hopstop/static/media/icon-cart.31d328873b06032e26015295432961d7.svg",
     "main.e59b51cb.css.map": "/Hopstop/static/css/main.e59b51cb.css.map",
-    "main.772d3e31.js.map": "/Hopstop/static/js/main.772d3e31.js.map"
+    "main.18def100.js.map": "/Hopstop/static/js/main.18def100.js.map"
   },
   "entrypoints": [
     "static/css/main.e59b51cb.css",
-    "static/js/main.772d3e31.js"
+    "static/js/main.18def100.js"
   ]
 }
