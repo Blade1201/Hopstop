@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hopstop/static/css/main.7976a3fa.css",
-    "main.js": "/Hopstop/static/js/main.9a5b2be9.js",
+    "main.css": "/Hopstop/static/css/main.e59b51cb.css",
+    "main.js": "/Hopstop/static/js/main.772d3e31.js",
     "static/media/uicons-regular-rounded-BG3GDTFR.eot": "/Hopstop/static/media/uicons-regular-rounded-BG3GDTFR.2a361185de096a6e3e99.eot",
     "static/media/uicons-bold-rounded-ZDARGU7R.eot": "/Hopstop/static/media/uicons-bold-rounded-ZDARGU7R.ac2c608bf183bb6b3390.eot",
     "static/media/uicons-solid-rounded-YIIQLYY7.eot": "/Hopstop/static/media/uicons-solid-rounded-YIIQLYY7.46f60d555e51ea1b1a10.eot",
@@ -69,14 +69,21 @@
     "static/media/category-7.jpg": "/Hopstop/static/media/category-7.7cd6d16771d1c14aabce.jpg",
     "static/media/category-5.jpg": "/Hopstop/static/media/category-5.10166490ff1d2b6e7d03.jpg",
     "static/media/category-2.jpg": "/Hopstop/static/media/category-2.ec96151da4708d2c8f39.jpg",
+    "static/media/payment-method.png": "/Hopstop/static/media/payment-method.47ad3e696f50516da1b3.png",
+    "static/media/icon-email.svg": "/Hopstop/static/media/icon-email.065936164add250dd517e53aaf5f4ed4.svg",
+    "static/media/icon-twitter.svg": "/Hopstop/static/media/icon-twitter.2055f5dba166dbd4e00effbaa16a485e.svg",
+    "static/media/icon-instagram.svg": "/Hopstop/static/media/icon-instagram.33ac397d60aafc606a9bee39c3d205e7.svg",
+    "static/media/icon-pinterest.svg": "/Hopstop/static/media/icon-pinterest.148c7a69136afe4975b52f1f036975b5.svg",
     "static/media/icon-heart.svg": "/Hopstop/static/media/icon-heart.664b829765c8220d8479be6a69ad4a07.svg",
+    "static/media/icon-facebook.svg": "/Hopstop/static/media/icon-facebook.b73cd1ecaf3e76f212ffc54fe8a51db0.svg",
+    "static/media/icon-youtube.svg": "/Hopstop/static/media/icon-youtube.e103aa666ce2fbce5cde7cfead2f8d24.svg",
     "index.html": "/Hopstop/index.html",
     "static/media/icon-cart.svg": "/Hopstop/static/media/icon-cart.31d328873b06032e26015295432961d7.svg",
-    "main.7976a3fa.css.map": "/Hopstop/static/css/main.7976a3fa.css.map",
-    "main.9a5b2be9.js.map": "/Hopstop/static/js/main.9a5b2be9.js.map"
+    "main.e59b51cb.css.map": "/Hopstop/static/css/main.e59b51cb.css.map",
+    "main.772d3e31.js.map": "/Hopstop/static/js/main.772d3e31.js.map"
   },
   "entrypoints": [
-    "static/css/main.7976a3fa.css",
-    "static/js/main.9a5b2be9.js"
+    "static/css/main.e59b51cb.css",
+    "static/js/main.772d3e31.js"
   ]
 }
