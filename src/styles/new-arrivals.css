@@ -1,0 +1,120 @@
+.button-arrivals-prev,
+.button-arrivals-next{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--first-color-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--first-color);
+    font-size: var(--tiny-font-size);
+}
+
+.button-arrivals-prev{
+    left: 79.6%;
+    transform: translateY(-3rem);
+}
+
+.button-arrivals-next{
+    right: 17%;
+    transform: translateY(-3rem);
+}
+
+@media screen and (max-width: 980px) {
+    .button-arrivals-prev{
+        left: 86.5%;
+    }
+}
+
+
+@media screen and (max-width: 1365px) {
+    .button-arrivals-prev{
+        left: 88.6%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .button-arrivals-prev{
+        left: 87.8%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .button-arrivals-prev{
+        left: 87.2%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .button-arrivals-prev{
+        left: 86.5%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .button-arrivals-prev{
+        left: 85.8%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .button-arrivals-prev{
+        left: 85%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .button-arrivals-prev{
+        left: 84%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .button-arrivals-prev{
+        left: 83.2%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .button-arrivals-prev{
+        left: 81.8%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button-arrivals-prev{
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .button-arrivals-prev{
+        left: 79.4%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .button-arrivals-prev{
+        left: 78%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .button-arrivals-prev{
+        left: 76.5%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .button-arrivals-prev{
+        display: none;
+    }
+
+    .button-arrivals-next{
+        display: none;
+    }
+}
