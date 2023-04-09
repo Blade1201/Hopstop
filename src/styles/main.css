@@ -164,8 +164,17 @@ input {
     color: var(--first-color);
 }
 
-.btn--md{
+.btn--md,
+.btn--sm{
     font-family: var(--body-font);
+}
+
+.btn--md{
     height: 45px;
     line-height: 42px;
+}
+
+.btn--sm{
+    height: 40px;
+    line-height: 36px;
 }

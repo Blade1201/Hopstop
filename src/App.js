@@ -1,23 +1,26 @@
 import React from "react";
-import "./styles/main.css";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Categories from "./components/Categories";
-import Products from "./components/Products";
-import Deals from "./components/Deals";
-import NewArrivals from "./components/NewArrivals";
-import Showcase from "./components/Showcase";
+import {Routes, Route, BrowserRouter} from "react-router-dom";
+import MainPage from "./MainPage";
+import Shop from "./components/Shop";
+import Details from "./components/Details";
 
 const App = () => {
   return (
       <div className="App">
-            <Header/>
-            <Home/>
-            <Categories/>
-            <Products/>
-            <Deals/>
-            <NewArrivals/>
-            <Showcase/>
+          <BrowserRouter>
+
+              <Routes>
+
+                  <Route path = "/" element = { <MainPage/> }/>
+
+                  <Route path = "/shop" element = { <Shop/> }/>
+
+
+                  <Route path = "/details" element = { <Details/> }/>
+
+              </Routes>
+
+          </BrowserRouter>
       </div>
   );
 }

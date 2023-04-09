@@ -4,6 +4,7 @@ import Logo from "../images/logo.png";
 import Search from "../images/search.png";
 import Icon_Heart from "../images/icon-heart.svg";
 import Icon_Cart from "../images/icon-cart.svg";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -32,11 +33,11 @@ const Header = () => {
 
                 <div className="nav__menu" id="nav">
                     <ul className="nav__list">
-                        <li className="nav__item"><a href="#" className="nav__link active-link">Kezdőlap</a> </li>
-                        <li className="nav__item"><a href="#" className="nav__link"> Áruház </a> </li>
-                        <li className="nav__item"><a href="#" className="nav__link"> Fiókom </a> </li>
-                        <li className="nav__item"><a href="#" className="nav__link"> Összehasonlitás </a> </li>
-                        <li className="nav__item"><a href="#" className="nav__link"> Bejelentkezés </a> </li>
+                        <Link to="/" className="nav__link active-link"> Kezdőlap </Link>
+                        <Link to="/shop" className="nav__link"> Áruház </Link>
+                        <li><a href="#" className="nav__link"> Fiókom </a> </li>
+                        <li><a href="#" className="nav__link"> Összehasonlitás </a> </li>
+                        <li><a href="#" className="nav__link"> Bejelentkezés </a> </li>
                     </ul>
 
                     <div className="header__search">

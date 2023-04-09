@@ -54,7 +54,7 @@
 }
 
 .header__action-btn img{
-    width: 30px;
+    width: 24px;
 }
 
 .header__action-btn .count{
@@ -86,11 +86,11 @@
 }
 
 .nav__logo-img{
-    width: 160px;
+    width: 140px;
 }
 
 .nav__menu{
-    width: 100%;
+    flex-grow: 1;
     margin-left: 2.5rem;
 }
 
