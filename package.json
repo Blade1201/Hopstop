@@ -2,7 +2,8 @@
   "name": "hopstop",
   "version": "0.1.0",
   "homepage": "https://blade1201.github.io/Hopstop",
-  "private": true,
+  "author": "Holovacki Román (Blade1201)",
+  "license": "ISC",
   "dependencies": {
     "@flaticon/flaticon-uicons": "^2.0.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -20,6 +21,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Blade1201/Hopstop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Blade1201/Hopstop/issues"
   },
   "eslintConfig": {
     "extends": [
