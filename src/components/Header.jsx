@@ -1,7 +1,6 @@
 import React from 'react';
 import "../styles/header.css";
 import Logo from "../images/logo.png";
-import Search from "../images/search.png";
 import Icon_Heart from "../images/icon-heart.svg";
 import Icon_Cart from "../images/icon-cart.svg";
 import {Link} from "react-router-dom";
@@ -27,9 +26,9 @@ const Header = () => {
             </div>
             
             <nav className="nav container">
-                <a href="#" className="nav__logo">
+                <Link to="/" className="nav__logo">
                     <img src={Logo} alt="logo" className="nav__logo-img"/>
-                </a>
+                </Link>
 
                 <div className="nav__menu" id="nav">
                     <ul className="nav__list">
@@ -39,25 +38,18 @@ const Header = () => {
                         <li><a href="#" className="nav__link"> Összehasonlitás </a> </li>
                         <li><a href="#" className="nav__link"> Bejelentkezés </a> </li>
                     </ul>
-
-                    <div className="header__search">
-                        <input type="text" placeholder="Keresés..." className="form__input"/>
-                        <button className="search__btn">
-                            <img src={Search} alt="search"/>
-                        </button>
-                    </div>
                 </div>
 
                 <div className="header__user-actions">
-                    <a href="#" className="header__action-btn">
+                    <Link to="/wishlist" className="header__action-btn">
                         <img src={Icon_Heart} alt="heart"/>
                         <span className="count">3</span>
-                    </a>
+                    </Link>
 
-                    <a href="#" className="header__action-btn">
+                    <Link to="/cart" className="header__action-btn">
                         <img src={Icon_Cart} alt="cart"/>
                         <span className="count">3</span>
-                    </a>
+                    </Link>
                 </div>
             </nav>
         </header>

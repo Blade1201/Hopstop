@@ -20,11 +20,11 @@ import Product_7_1 from "../images/product-7-1.jpg";
 import Product_7_2 from "../images/product-7-2.jpg";
 import Product_8_1 from "../images/product-8-1.jpg";
 import Product_8_2 from "../images/product-8-2.jpg";
+import {Link} from "react-router-dom";
 
 const NewArrivals = () => {
 
     useEffect(() => {
-        window.addEventListener("load", () => {
             const swiperArrivals = document.querySelector('.new__container');
 
             const buttonArrivalsPrev = document.querySelector('.button-arrivals-prev');
@@ -36,7 +36,6 @@ const NewArrivals = () => {
             buttonArrivalsNext.addEventListener('click', () => {
                 swiperArrivals.swiper.slideNext();
             });
-        });
     },[])
 
     return (
@@ -99,9 +98,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>
@@ -150,9 +147,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>
@@ -201,9 +196,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>
@@ -252,9 +245,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>
@@ -303,9 +294,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>
@@ -354,9 +343,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>
@@ -405,9 +392,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>
@@ -430,11 +415,11 @@ const NewArrivals = () => {
 
                 <SwiperSlide className="product__item">
                     <div className="product__banner">
-                        <a href="#" className="product__images">
+                        <Link to="/details" className="product__images">
                             <img src={Product_8_1} alt="product_8_1" className="product__img default"/>
 
                             <img src={Product_8_2} alt="product_8_2" className="product__img hover"/>
-                        </a>
+                        </Link>
 
                         <div className="product__actions">
                             <a href="#" className="action__btn" aria-label="Gyors nézet">
@@ -455,9 +440,7 @@ const NewArrivals = () => {
                     <div className="product__content">
                         <span className="product__category">Ruházat</span>
 
-                        <a href="#">
                             <h3 className="product__title">Mintás Ingek</h3>
-                        </a>
 
                         <div className="product__rating">
                             <i className="fi fi-rs-star"></i>

@@ -7,6 +7,7 @@ import Icon_Instagram from "../images/icon-instagram.svg";
 import Icon_Pinterest from "../images/icon-pinterest.svg";
 import Icon_Youtube from "../images/icon-youtube.svg";
 import Payment_Method from "../images/payment-method.png";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -76,8 +77,8 @@ const Footer = () => {
 
                     <ul className="footer__links">
                         <li><a href="#" className="footer__link"> Bejelentkezés </a></li>
-                        <li><a href="#" className="footer__link"> Kosár megnézése </a></li>
-                        <li><a href="#" className="footer__link"> Kívánságlista </a></li>
+                        <li><Link to="/cart" className="footer__link"> Kosár megnézése </Link></li>
+                        <li><Link to="/wishlist" className="footer__link"> Kívánságlista </Link></li>
                         <li><a href="#" className="footer__link"> Szállítás nyomonkövetése </a></li>
                         <li><a href="#" className="footer__link"> Segítség </a></li>
                         <li><a href="#" className="footer__link"> Rendelés </a></li>

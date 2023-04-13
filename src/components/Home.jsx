@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/home.css";
 import Home__Img from "../images/home-img.png";
+import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
@@ -17,7 +18,7 @@ const Home = () => {
                         Takarítson meg akár 20%-ot kuponjaival
                     </p>
 
-                    <a href="#" className="btn"> Vásárlás </a>
+                    <Link to="/shop" className="btn"> Vásárlás </Link>
                 </div>
 
                 <img src={Home__Img} alt="home__img"/>

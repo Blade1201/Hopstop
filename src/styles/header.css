@@ -29,20 +29,8 @@
     color: var(--text-color);
 }
 
-.header__search{
-    width: 340px;
-    position: relative;
-}
-
 .header__search .form__input{
     width: 100%;
-}
-
-.search__btn{
-    position: absolute;
-    top: 24%;
-    right: 1.25rem;
-    cursor: pointer;
 }
 
 .header__user-actions{

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "../styles/products.css";
 import Product_1_1 from "../images/product-1-1.jpg";
 import Product_1_2 from "../images/product-1-2.jpg";
@@ -26,10 +26,11 @@ import Product_12_1 from "../images/product-12-1.jpg";
 import Product_12_2 from "../images/product-12-2.jpg";
 import Product_13_1 from "../images/product-13-1.jpg";
 import Product_13_2 from "../images/product-13-2.jpg";
+import {Link} from "react-router-dom";
 
 const Products = () => {
 
-    window.addEventListener("load", () => {
+    useEffect(() => {
         const tabs = document.querySelectorAll("[data-target]");
 
         let activeTab = tabs[0];
@@ -39,18 +40,16 @@ const Products = () => {
                 const content = document.querySelector(tab.dataset.target);
 
                 activeTab.classList.remove("active-tab");
-
                 const activeTabContent = document.querySelector(activeTab.dataset.target);
                 activeTabContent.classList.remove("active-tab");
 
                 tab.classList.add("active-tab");
-
                 content.classList.add("active-tab");
 
                 activeTab = tab;
             });
         });
-    });
+    }, []);
 
 
     return (
@@ -94,9 +93,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -145,9 +142,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -196,9 +191,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -247,9 +240,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -298,9 +289,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -349,9 +338,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -400,9 +387,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -425,11 +410,11 @@ const Products = () => {
 
                         <div className="product__item">
                             <div className="product__banner">
-                                <a href="#" className="product__images">
+                                <Link to="/details" className="product__images">
                                     <img src={Product_8_1} alt="product_8_1" className="product__img default"/>
 
                                     <img src={Product_8_2} alt="product_8_2" className="product__img hover"/>
-                                </a>
+                                </Link>
 
                                 <div className="product__actions">
                                     <a href="#" className="action__btn" aria-label="Gyors nézet">
@@ -450,9 +435,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -505,9 +488,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -556,9 +537,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -607,9 +586,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -658,9 +635,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -709,9 +684,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -760,9 +733,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -811,9 +782,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -836,11 +805,11 @@ const Products = () => {
 
                         <div className="product__item">
                             <div className="product__banner">
-                                <a href="#" className="product__images">
+                                <Link to="/details" className="product__images">
                                     <img src={Product_8_1} alt="product_8_1" className="product__img default"/>
 
                                     <img src={Product_8_2} alt="product_8_2" className="product__img hover"/>
-                                </a>
+                                </Link>
 
                                 <div className="product__actions">
                                     <a href="#" className="action__btn" aria-label="Gyors nézet">
@@ -861,9 +830,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -916,9 +883,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -967,9 +932,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -1018,9 +981,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -1069,9 +1030,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -1120,9 +1079,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -1171,9 +1128,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -1222,9 +1177,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>
@@ -1247,11 +1200,11 @@ const Products = () => {
 
                         <div className="product__item">
                             <div className="product__banner">
-                                <a href="#" className="product__images">
+                                <Link to="/details" className="product__images">
                                     <img src={Product_8_1} alt="product_8_1" className="product__img default"/>
 
                                     <img src={Product_8_2} alt="product_8_2" className="product__img hover"/>
-                                </a>
+                                </Link>
 
                                 <div className="product__actions">
                                     <a href="#" className="action__btn" aria-label="Gyors nézet">
@@ -1272,9 +1225,7 @@ const Products = () => {
                             <div className="product__content">
                                 <span className="product__category">Ruházat</span>
 
-                                <a href="#">
                                     <h3 className="product__title">Mintás Ingek</h3>
-                                </a>
 
                                 <div className="product__rating">
                                     <i className="fi fi-rs-star"></i>

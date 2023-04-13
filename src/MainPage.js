@@ -7,7 +7,7 @@ import Products from "./components/Products";
 import Deals from "./components/Deals";
 import NewArrivals from "./components/NewArrivals";
 import Showcase from "./components/Showcase";
-import Newsletter from "./components/Newsletter";
+import Coupon from "./components/Coupon";
 import Footer from "./components/Footer";
 
 const MainPage = () => {
@@ -20,7 +20,7 @@ const MainPage = () => {
             <Deals/>
             <NewArrivals/>
             <Showcase/>
-            <Newsletter/>
+            <Coupon/>
             <Footer/>
         </div>
     );

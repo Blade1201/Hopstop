@@ -9,6 +9,7 @@ import Showcase_6 from "../images/showcase-img-6.jpg"
 import Showcase_7 from "../images/showcase-img-7.jpg"
 import Showcase_8 from "../images/showcase-img-8.jpg"
 import Showcase_9 from "../images/showcase-img-9.jpg"
+import {Link} from "react-router-dom";
 
 const Showcase = () => {
     return (
@@ -162,14 +163,14 @@ const Showcase = () => {
                     </div>
 
                     <div className="showcase__item">
-                        <a href="#" className="showcase__img-box">
+                        <Link to="/details" className="showcase__img-box">
                             <img src={Showcase_9} alt="showcase_9" className="showcase__img"/>
-                        </a>
+                        </Link>
 
                         <div className="showcase__content">
-                            <a href="#">
+                            <Link to="/details">
                                 <h4 className="showcase__title">Százszorszép virágmintás pántos egyberuha</h4>
-                            </a>
+                            </Link>
 
                             <div className="showcase__price flex">
                                 <span className="new__price">21 799 Ft.</span>

@@ -16,7 +16,6 @@ import Category_8 from "../images/category-8.jpg";
 const Categories = () => {
 
     useEffect(() => {
-        window.addEventListener("load", () => {
             const swiperCategory = document.querySelector('.category__container');
 
             const buttonCategoryPrev = document.querySelector('.button-category-prev');
@@ -28,7 +27,6 @@ const Categories = () => {
             buttonCategoryNext.addEventListener('click', () => {
             swiperCategory.swiper.slideNext();
             });
-        });
         },[])
 
 
