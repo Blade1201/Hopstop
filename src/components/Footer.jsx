@@ -14,9 +14,9 @@ const Footer = () => {
         <footer className="footer container">
             <div className="footer__container grid">
                 <div className="footer__content">
-                    <a href="#" className="footer__logo">
+                    <Link to="/" className="footer__logo">
                         <img src={Logo} alt="logo" className="footer__logo-img"/>
-                    </a>
+                    </Link>
 
                     <h4 className="footer__subtitle"> Elérhetőség </h4>
 
