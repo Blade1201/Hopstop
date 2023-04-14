@@ -75,7 +75,7 @@ const Footer = () => {
                     <h3 className="footer__title"> Fiókom</h3>
 
                     <ul className="footer__links">
-                        <li><a href="#" className="footer__link"> Bejelentkezés </a></li>
+                        <li><Link to="/authentication" className="footer__link"> Bejelentkezés </Link></li>
                         <li><Link to="/cart" className="footer__link"> Kosár megnézése </Link></li>
                         <li><Link to="/wishlist" className="footer__link"> Kívánságlista </Link></li>
                         <li><a href="#" className="footer__link"> Szállítás nyomonkövetése </a></li>

@@ -19,9 +19,9 @@ const Header = () => {
                         Takarítson meg többet kuponjaival
                     </p>
 
-                    <a href="#" className="header__top-action">
+                    <Link to="/authentication" className="header__top-action">
                         Bejelentkezés
-                    </a>
+                    </Link>
                 </div>
             </div>
             
@@ -32,11 +32,11 @@ const Header = () => {
 
                 <div className="nav__menu" id="nav">
                     <ul className="nav__list">
-                        <Link to="/" className="nav__link active-link"> Kezdőlap </Link>
-                        <Link to="/shop" className="nav__link"> Áruház </Link>
-                        <li><a href="#" className="nav__link"> Fiókom </a> </li>
-                        <li><a href="#" className="nav__link"> Összehasonlitás </a> </li>
-                        <li><a href="#" className="nav__link"> Bejelentkezés </a> </li>
+                        <li><Link to="/" className="nav__link active-link"> Kezdőlap </Link></li>
+                        <li><Link to="/shop" className="nav__link"> Áruház </Link></li>
+                        <li><Link to="/account" className="nav__link"> Fiókom </Link> </li>
+                        <li><Link to="/compare" className="nav__link"> Összehasonlitás </Link> </li>
+                        <li><Link to="/authentication" className="nav__link"> Bejelentkezés </Link> </li>
                     </ul>
                 </div>
 

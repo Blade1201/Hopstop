@@ -4,7 +4,7 @@ import Icon_Email from "../images/icon-email.svg";
 
 const Newsletter = () => {
     return (
-        <section className="coupon section home__coupon">
+        <section className="coupon section">
             <div className="coupon__container container grid">
                 <h3 className="coupon__title flex">
                     <img src={Icon_Email} alt="icon-email" className="coupon__icon"/>

@@ -2,10 +2,6 @@
     background-color: hsl(166, 23%, 74%);
 }
 
-.home__coupon{
-    margin-top: 2rem;
-}
-
 .coupon__container{
     grid-template-columns: repeat(2,1fr) 1.8fr;
     align-items: center;

@@ -28,7 +28,7 @@ const Wishlist = () => {
                             <th> Név </th>
                             <th> Ár </th>
                             <th> Raktári meglét </th>
-                            <th> Cselekvés </th>
+                            <th> Tevékenységek </th>
                             <th> Eltávolítás </th>
                         </tr>
 

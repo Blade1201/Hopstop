@@ -32,7 +32,6 @@ const Products = () => {
 
     useEffect(() => {
         const tabs = document.querySelectorAll("[data-target]");
-
         let activeTab = tabs[0];
 
         tabs.forEach((tab) => {
@@ -49,6 +48,23 @@ const Products = () => {
                 activeTab = tab;
             });
         });
+
+        return () => {
+            tabs.forEach((tab) => {
+                tab.removeEventListener("click", () => {
+                    const content = document.querySelector(tab.dataset.target);
+
+                    activeTab.classList.remove("active-tab");
+                    const activeTabContent = document.querySelector(activeTab.dataset.target);
+                    activeTabContent.classList.remove("active-tab");
+
+                    tab.classList.add("active-tab");
+                    content.classList.add("active-tab");
+
+                    activeTab = tab;
+                });
+            });
+        };
     }, []);
 
 

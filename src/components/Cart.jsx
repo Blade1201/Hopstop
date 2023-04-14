@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Product_1_2 from "../images/product-1-2.jpg";
 import Product_2_1 from "../images/product-2-1.jpg";
 import Product_7_1 from "../images/product-7-1.jpg";
+import {Link} from "react-router-dom";
 
 const Cart = () => {
     return (
@@ -104,10 +105,10 @@ const Cart = () => {
                         Kosár Frissítése
                     </a>
 
-                    <a href="#" className="btn flex  btn--md">
+                    <Link to="/" className="btn flex  btn--md">
                         <i className="fi fi-rs-shopping-bag"></i>
                         Vásárlás Folytatása
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="divider">
@@ -175,10 +176,10 @@ const Cart = () => {
                             </tr>
                         </table>
 
-                        <a href="#" className="btn flex btn--md">
+                        <Link to="/checkout" className="btn flex btn--md">
                             <i className="fi fi-rs-box-alt"></i>
                             Tovább a pénztárhoz
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
