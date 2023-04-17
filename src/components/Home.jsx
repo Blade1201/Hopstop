@@ -21,7 +21,7 @@ const Home = () => {
                     <Link to="/shop" className="btn"> Vásárlás </Link>
                 </div>
 
-                <img src={Home__Img} alt="home__img"/>
+                <img src={Home__Img} alt="home__img" className="home__img"/>
             </div>
         </section>
     );

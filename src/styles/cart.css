@@ -82,6 +82,7 @@
 .cart__actions{
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     gap: .75rem;
     margin-top: 1.5rem;
 }
@@ -157,4 +158,59 @@
 
 .cart__total .btn{
     display: inline-flex;
+}
+
+@media screen and (max-width: 992px){
+    .cart__group{
+        grid-template-columns: 1fr;
+        row-gap: 2.75rem;
+    }
+
+    .table tr th:nth-child(1),
+    .table tr td:nth-child(1){
+        width: 140px;
+    }
+
+    .table tr th:nth-child(2),
+    .table tr td:nth-child(2){
+        width: 330px;
+    }
+
+    .table tr th:nth-child(3),
+    .table tr td:nth-child(3){
+        width: 80px;
+    }
+
+    .table tr th:nth-child(4),
+    .table tr td:nth-child(4){
+        width: 160px;
+    }
+
+    .table tr th:nth-child(5),
+    .table tr td:nth-child(5){
+        width: 160px;
+    }
+
+    .table tr th:nth-child(6),
+    .table tr td:nth-child(6){
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .cart__total{
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .cart__btn{
+        bottom: 1.4rem;
+        right: 1.25rem;
+    }
+
+    .cart__total-table tr td{
+        display: block;
+        width: 100%;
+    }
 }

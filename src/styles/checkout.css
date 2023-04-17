@@ -74,3 +74,33 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+@media screen and (max-width: 1200px){
+    .checkout__group:nth-child(2){
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .checkout__container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .checkout__group:nth-child(2){
+        padding: 1.25rem;
+    }
+
+    .order__table tr th{
+        display: none;
+    }
+
+    .order__table tr td{
+        display: block;
+    }
+
+    .payment__methods{
+        margin-block: 2.25rem 2.5rem;
+    }
+}

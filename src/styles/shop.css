@@ -50,3 +50,16 @@
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
+
+@media screen and (max-width: 576px){
+    .pagination{
+        column-gap: .5rem;
+        margin-top: 2.5rem;
+    }
+
+    .pagination__link{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}

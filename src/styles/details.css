@@ -218,3 +218,66 @@
 .rate__product{
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 1200px){
+    .details__brand{
+        margin-block: .75rem;
+    }
+
+    .details__price{
+        padding-block: .75rem;
+    }
+
+    .short__description{
+        margin-bottom: 1.5rem;
+    }
+
+    .details__color{
+        margin-block: 1.75rem 1.25rem;
+    }
+
+    .details__size{
+        margin-bottom: 2.25rem;
+    }
+
+    .color__link{
+        width: 22px;
+        height: 22px;
+    }
+
+    .size__link{
+        padding: .375rem .625rem;
+    }
+
+    .details__action{
+        margin-bottom: 2.75rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .details__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .details__container{
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .info__table tr th,
+    .info__table tr td{
+        display: block;
+    }
+
+    .detail__tabs{
+        column-gap: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .review__single{
+        column-gap: 1rem;
+    }
+}

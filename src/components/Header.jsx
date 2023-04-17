@@ -1,11 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../styles/header.css";
 import Logo from "../images/logo.png";
 import Icon_Heart from "../images/icon-heart.svg";
 import Icon_Cart from "../images/icon-cart.svg";
+import Menu_Burger from "../images/menu-burger.svg";
 import {Link} from "react-router-dom";
 
 const Header = () => {
+
+    const [clicked, setClicked] = useState(false);
+
+    const handleNavToggle = () => {
+        setClicked(!clicked);
+    };
+
+    const handleNavClose = () => {
+        setClicked(false);
+    };
+
     return (
         <header className="header">
             <div className="header__top">
@@ -30,7 +42,18 @@ const Header = () => {
                     <img src={Logo} alt="logo" className="nav__logo-img"/>
                 </Link>
 
-                <div className="nav__menu" id="nav">
+
+                <div id="nav-menu" className={`nav__menu ${clicked ? "show-menu" : ""}`}>
+                    <div className="nav__menu-top">
+                        <Link to="/" className="nav__menu-logo">
+                            <img src={Logo} alt="logo"/>
+                        </Link>
+
+                        <div className="nav__close" id="nav-close" onClick={handleNavClose}>
+                            <i className="fi fi-rs-cross-small"></i>
+                        </div>
+                    </div>
+
                     <ul className="nav__list">
                         <li><Link to="/" className="nav__link active-link"> Kezdőlap </Link></li>
                         <li><Link to="/shop" className="nav__link"> Áruház </Link></li>
@@ -50,6 +73,11 @@ const Header = () => {
                         <img src={Icon_Cart} alt="cart"/>
                         <span className="count">3</span>
                     </Link>
+
+                    <div className="header__action-btn nav__toggle" id="nav-toggle" onClick={handleNavToggle}>
+                        <img src={Menu_Burger} alt="menu"/>
+                    </div>
+
                 </div>
             </nav>
         </header>

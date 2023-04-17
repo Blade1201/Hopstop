@@ -9,3 +9,16 @@
     padding: 2rem;
     border-radius: .5rem;
 }
+
+@media screen and (max-width: 992px){
+    .login,
+    .register{
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .login-register__container{
+        grid-template-columns: 100%;
+    }
+}

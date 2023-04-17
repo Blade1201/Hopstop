@@ -63,3 +63,26 @@
     color: var(--text-color-light);
     font-size: var(--small-font-size);
 }
+
+@media screen and (max-width: 992px){
+    .footer__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer__container{
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .footer__title{
+        margin-top: .25rem;
+    }
+
+    .footer__bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+}

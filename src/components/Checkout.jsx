@@ -40,9 +40,9 @@ const Checkout = () => {
 
                             <input type="text" placeholder="Város" className="form__input"/>
 
-                            <input type="text" placeholder="Cím" className="form__input"/>
-
                             <input type="number" placeholder="Irányítószám" className="form__input"/>
+
+                            <input type="text" placeholder="Cím" className="form__input"/>
 
                             <input type="tel" placeholder="Telefonszám" className="form__input"/>
 

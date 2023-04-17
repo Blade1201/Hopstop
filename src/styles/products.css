@@ -1,6 +1,7 @@
 .tab__btns{
     display: flex;
-    column-gap: .75rem;
+    flex-wrap: wrap;
+    gap: .75rem;
     margin-bottom: 2rem;
 }
 
@@ -200,4 +201,30 @@
     background-color: var(--first-color);
     border-color: var(--first-color);
     color: var(--body-color);
+}
+
+@media screen and (max-width: 1400px) {
+    .products__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 992px){
+    .products__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .products__container{
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .action__btn{
+        width: 36px;
+        height: 36px;
+        line-height: 38px;
+    }
 }

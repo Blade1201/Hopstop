@@ -91,3 +91,32 @@
     background-color: transparent;
     color: var(--first-color);
 }
+
+@media screen and (max-width: 1200px){
+    .countdown{
+        column-gap: 1rem;
+    }
+
+    .countdown__period{
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .countdown__amount::after{
+        right: -30%;
+        top: 14%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .deals__container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .deals__item{
+        padding: 1.25rem;
+    }
+}

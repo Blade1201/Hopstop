@@ -33,3 +33,19 @@
 .home__img{
     justify-self: flex-end;
 }
+
+@media screen and (max-width: 1200px){
+    .home__container{
+        grid-template-columns: 5.5fr 6.5fr;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .home__container{
+        grid-template-columns: 1fr;
+    }
+
+    .home__img{
+        justify-self: center;
+    }
+}

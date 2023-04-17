@@ -39,6 +39,21 @@
     --transition: cubic-bezier(0,0,.05,1);
 }
 
+@media screen and (max-width: 1200px) {
+    :root{
+        --big-font-size: 2.25rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.375rem;
+        --h3-font-size: 1.25rem;
+        --h4-font-size: 1.125rem;
+        --large-font-size: 1rem;
+        --normal-font-size: .9375rem;
+        --small-font-size: .8125rem;
+        --smaller-font-size: .6875rem;
+        --tiny-font-size: .625rem;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -199,4 +214,49 @@ table{
     display: flex;
     align-items: center;
     column-gap: .5rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 740px;
+    }
+
+    .btn{
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .btn--md{
+        height: 42px;
+        line-height: 39px;
+    }
+
+    .btn--sm{
+        height: 38px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .form__group{
+        grid-template-columns: 1fr;
+    }
 }

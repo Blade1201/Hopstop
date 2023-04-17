@@ -23,6 +23,7 @@
     font-size: var(--small-font-size);
     font-weight: var(--weight-600);
     width: max-content;
+    text-align: center;
 }
 
 .coupon__form{
@@ -56,4 +57,14 @@
 
 .coupon__btn:hover{
     background-color: var(--first-color);
+}
+
+@media screen and (max-width: 992px){
+    .coupon__container{
+        grid-template-columns: 1fr;
+    }
+
+    .coupon__description{
+        display: none;
+    }
 }

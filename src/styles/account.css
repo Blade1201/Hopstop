@@ -72,3 +72,36 @@
 .edit{
     font-size: var(--small-font-size);
 }
+
+@media screen and (max-width: 1400px) {
+    .accounts__container{
+        grid-template-columns: 3fr 9fr;
+    }
+
+    .account__tab{
+        padding: .75rem 1rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .accounts__container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .tab__header,
+    .tab__body{
+        padding: .75rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .placed__order-table th{
+        display: none;
+    }
+
+    .placed__order-table tr td{
+        display: block;
+    }
+}

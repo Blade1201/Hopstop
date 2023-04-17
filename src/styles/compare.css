@@ -22,3 +22,16 @@
 .table__dimension{
     font-size: var(--small-font-size);
 }
+
+@media screen and (max-width: 768px){
+    .compare__table tr td{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .compare__table tr th{
+        display: block;
+        width: 100%;
+    }
+}
